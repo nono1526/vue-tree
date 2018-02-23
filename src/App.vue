@@ -1,10 +1,11 @@
 <template>
-  <ul id="app">
+  <div id="app">
+    點擊兩下可將選單轉為目錄型態
     <item
       :model="treeData"
     >
     </item>
-  </ul>
+  </div>
 </template>
 
 <script>
@@ -12,25 +13,25 @@ import item from './item.vue';
 var data = {
 name: 'my tree',
 children: [
-        { name: 'hello' },
-        { name: 'wat' },
+        { name: 'dica' },
+        { name: 'omg' },
         {
-        name: 'child folder',
+        name: '子目錄',
         children: [
             {
-            name: 'child folder',
+            name: '子目錄',
             children: [
-                { name: 'hello' },
-                { name: 'wat' }
+                { name: 'dica' },
+                { name: 'nono' }
             ]
             },
-            { name: 'hello' },
-            { name: 'wat' },
+            { name: 'dica' },
+            { name: 'nono' },
             {
-            name: 'child folder',
+            name: '子目錄',
             children: [
-                { name: 'hello' },
-                { name: 'wat' }
+                { name: 'dica' },
+                { name: 'nono' }
             ]
             }
         ]
